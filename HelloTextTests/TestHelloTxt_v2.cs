@@ -9,7 +9,7 @@ using HelloTxt.Request;
 using System.Configuration;
 
 /*
- * Copyright (C) 2011 Ben Powell
+ * Copyright (C) 2011 Ben Powell http://twitter.com/junto
  * http://blog.benpowell.co.uk/
  * 
  * This program is free software: you can redistribute it and/or modify
