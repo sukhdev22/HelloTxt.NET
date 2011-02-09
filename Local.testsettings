@@ -3,6 +3,7 @@
   <Description>These are default test settings for a local test run.</Description>
   <Deployment>
     <DeploymentItem filename="HelloTextTests\cute.jpg" />
+    <DeploymentItem filename="HelloTextTests\bin\Debug\HelloTextTests.dll.config" />
   </Deployment>
   <Execution>
     <TestTypeSpecific>
