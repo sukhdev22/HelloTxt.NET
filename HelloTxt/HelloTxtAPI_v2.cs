@@ -173,12 +173,16 @@ namespace HelloTxt.v2
                 if (property.PropertyType == typeof(FileInfo))
                 {
                     FileInfo fi = (FileInfo)property.GetValue(request, null);
-                    HttpFormFile file = new HttpFormFile();
-                    file.Content = HttpContent.Create(fi, "application/octet-stream");
-                    file.FileName = fi.Name;
-                    file.Name = "image";
 
-                    form.Files.Add(file);
+                    if (fi != null)
+                    {
+                        HttpFormFile file = new HttpFormFile();
+                        file.Content = HttpContent.Create(fi, "application/octet-stream");
+                        file.FileName = fi.Name;
+                        file.Name = "image";
+
+                        form.Files.Add(file);
+                    }
                 }
                 else
                 {
