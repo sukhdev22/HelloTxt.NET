@@ -185,10 +185,10 @@ namespace HelloTextTests
             request.poi_name = String.Empty;
             request.scheduled_time = DateTime.Now.AddMinutes(10).ToString("s");
 
-            //
-            var path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            // Comment this in if you are running MSTEST in Visual Studio
+            /*var path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             var fileName = System.IO.Path.Combine(path, "cute.jpg");
-            request.image = new System.IO.FileInfo(fileName);
+            request.image = new System.IO.FileInfo(fileName);*/
 
             //
             request.debug = (isDebug) ? "1" : "0";
