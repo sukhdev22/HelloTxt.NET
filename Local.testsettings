@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <TestSettings name="Local" id="b9d39307-b66d-457b-a1b0-e0f1358aff5e" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Description>These are default test settings for a local test run.</Description>
+  <Deployment>
+    <DeploymentItem filename="HelloTextTests\App.config" />
+    <DeploymentItem filename="HelloTextTests\cute.jpg" />
+  </Deployment>
   <Execution>
     <TestTypeSpecific>
       <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
