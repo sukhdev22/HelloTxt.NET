@@ -2,7 +2,6 @@
 <TestSettings name="Local" id="b9d39307-b66d-457b-a1b0-e0f1358aff5e" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Description>These are default test settings for a local test run.</Description>
   <Deployment>
-    <DeploymentItem filename="TestResults\Ben_BEN-PC 2011-02-09 10_11_09\Out\hellotexttests.dll.config" />
     <DeploymentItem filename="HelloTextTests\cute.jpg" />
   </Deployment>
   <Execution>
