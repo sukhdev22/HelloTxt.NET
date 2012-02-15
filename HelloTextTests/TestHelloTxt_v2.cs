@@ -169,6 +169,7 @@ namespace HelloTextTests
         /// Executes the user post.
         /// </summary>
         [TestMethod]
+        [DeploymentItem("cute.jpg")]
         public void ExecuteUserPost_v2()
         {
             //
@@ -186,9 +187,9 @@ namespace HelloTextTests
             request.scheduled_time = DateTime.Now.AddMinutes(10).ToString("s");
 
             // Comment this in if you are running MSTEST in Visual Studio
-            /*var path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            var path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             var fileName = System.IO.Path.Combine(path, "cute.jpg");
-            request.image = new System.IO.FileInfo(fileName);*/
+            request.image = new System.IO.FileInfo(fileName);
 
             //
             request.debug = (isDebug) ? "1" : "0";
