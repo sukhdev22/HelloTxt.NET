@@ -173,18 +173,20 @@ namespace HelloTextTests
         public void ExecuteUserPost_v2()
         {
             //
-            bool isDebug = true;
+            var isDebug = true;
 
-            UserPostRequest request = new UserPostRequest();
-            request.app_key = this.app_key;
-            request.user_key = this.user_key;
-            request.body = "body test";
-            request.title = "title test";
-            request.networks = String.Empty;
-            request.poi_lat = String.Empty;
-            request.poi_long = String.Empty;
-            request.poi_name = String.Empty;
-            request.scheduled_time = DateTime.Now.AddMinutes(10).ToString("s");
+            var request = new UserPostRequest
+            {
+                app_key = this.app_key,
+                user_key = this.user_key,
+                body = "body test",
+                title = "title test",
+                networks = String.Empty,
+                poi_lat = String.Empty,
+                poi_long = String.Empty,
+                poi_name = String.Empty,
+                scheduled_time = DateTime.Now.AddMinutes(10).ToString("s")
+            };
 
             // Comment this in if you are running MSTEST in Visual Studio
             var path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
